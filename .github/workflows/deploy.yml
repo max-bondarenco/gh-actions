@@ -30,7 +30,7 @@ jobs:
       - name: Run Tests
         run: npm run test
 
-  deploy:
+  build:
     needs: [lint, test]
     runs-on: ubuntu-latest
     steps:
